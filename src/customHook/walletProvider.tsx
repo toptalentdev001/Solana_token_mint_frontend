@@ -13,7 +13,6 @@ interface ChildrenProps {
 const WalletContextProvider = ({ children }: ChildrenProps) => {
   const wallets = useMemo(() => [], []);
   const endpoint = import.meta.env.VITE_HELIUS_RPC_ENDPOINT;
-  console.log(endpoint);
 
   return (
     <ConnectionProvider endpoint={endpoint}>
